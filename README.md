@@ -34,13 +34,17 @@ source venv/bin/activate
     ```bash
     pip install -r requirements.txt
 
+4. Create a .env file in the root folder and add your Gemini API key:
+   ```bash
+   GEMINI_API_KEY=your_api_key_here
 
-4. Start the project
-   uvicorn main:app --reload
-Access the API documentation
+5. Start the project
+   ```bash
+   uvicorn main:app --reload --port 8001
 
 Open your browser and go to:
-http://127.0.0.1:8000/docs
+   
+   http://127.0.0.1:8000/docs
 
 ## Click on Authorization button
 Authorization: test-token
